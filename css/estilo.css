@@ -28,21 +28,22 @@ html{
   text-decoration: none;
   padding: .6em;
   z-index: 4;
-  color: #eef7;
-  transition: color .6s ease-in-out, border-bottom .6s ease-in-out, transform .6s ease-in-out;
+  color: #eef;
+  opacity: .6;
+  cursor: pointer;
+  transition: opacity .7s ease-in-out, border-bottom .7s ease-in-out, transform .6s ease-in-out;
 }
 .pMenu:hover{
   border-bottom: 2px #fff7 solid;
-  color: #eef;
   transform: scale(1.1);
-  cursor: pointer;
+  opacity: 1;
 }
 .pNav{
-  width: 20em;
-  padding: 2em;
+  width: 10em;
+  padding: 1em;
   font-size: 28px;
   gap: 1em;
-  color: #0008;
+  color: #000;
   font-family: 'Cutive Mono', monospace;
 }
 #home{
@@ -57,40 +58,35 @@ html{
 .divHome h4{
   font-family: 'Indie Flower', cursive;
   font-size: 18px;
-  color: rgb(122, 0, 163);
+  color: rgb(168, 6, 222);
 }
-.divHome h1 {
+.miNombre{
   font-family: 'Cutive Mono', monospace;
   font-size: 40px;
+  color: transparent;
 }
 
+
 .divHome h3{
-  color: #ffffff;
+  color: #000;
   font-size: 20px;
 }
 .divHome{
   line-height: 1.5;
+  width: 35em;
+  text-align: center;
+  position: relative;
 }
 .circle{
-  position: fixed;
+  position: absolute;
   background: linear-gradient(130deg,rgba(146, 0, 194, 1) 30%, rgba(227, 68, 0, 1));
-  width: 32em;
-  height: 32em;
+  width: 35em;
+  height: 35em;
   border-radius: 50%;
-  filter: blur(2rem);
+  filter: blur(90px);
   opacity: .8;
   z-index: -1;
   animation: rotate-center 6s linear infinite both;
-}
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
 }
 .indice {
   text-align: center;
@@ -139,4 +135,50 @@ a{
 }
 #projets{
   padding-top: 2em;
+}
+
+.border {
+  position: absolute;
+  color: #333;
+  padding: 10px 20px;
+  text-shadow:
+    -1px -1px 0px #fff,
+    1px 1px 0px #fff,
+    -1px 1px 0px #fff,
+    1px -1px 0px #fff;
+}
+
+.wave{
+  position: absolute;
+  padding: 10px 20px;
+  color: #a7f;
+  animation: wavy 3s ease-in-out infinite;
+}
+@keyframes wavy{
+  0%, 100%{
+    clip-path: polygon(
+      0% 47%, 
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50%{
+    clip-path: polygon(
+      0% 60%, 
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
 }
