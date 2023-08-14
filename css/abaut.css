@@ -1,8 +1,24 @@
 .texto-abaut{
-  padding: 20px;
+  padding-top: 10px;
   line-height: 1.5;
   font-size: 20px;
   margin: 30px 0px;
   border-radius: 5px;
-  background-color: rgb(58, 15, 77);
+}
+.btnCV{
+  margin: 20px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f66;
+  outline: none;
+  padding: 5px;
+  width: 8em;
+  height: 3em;
+  font-size: 18px;
+  cursor: pointer;
+  transition: text-shadow .6s, box-shadow .6s;
+}
+.btnCV:hover{
+  text-shadow: 0px 0px 5px #fff;
+  box-shadow:  0px 0px 10px rgb(254, 127, 127);
 }
