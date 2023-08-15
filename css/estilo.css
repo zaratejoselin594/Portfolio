@@ -158,7 +158,7 @@ a{
 .seccion{
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100%; 
 }
 .texto{
   width: 55em;
