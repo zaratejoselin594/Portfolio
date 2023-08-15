@@ -12,6 +12,7 @@ footer{
   position: absolute;
   filter: blur(90px);
   opacity: 1;
+  animation: rotate-center 3s linear infinite both;
 }
 .foter{
   display: flex;

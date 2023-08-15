@@ -123,26 +123,16 @@ body::-webkit-scrollbar-thumb {
   bottom: -80em;
 }
 .indice {
-  text-align: center;
   width: 7em;
   height: 8em;
-  color: #fff;
-  background-color: #222;
-  border-radius: 5px;
   padding: 20px;
-  margin-top: 30px;
   font-family: 'Quicksand', sans-serif;
   position: sticky;
   top: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: baseline;
   flex-direction: column;
-  opacity: .6;
-  transition: opacity .7s;
-}
-.indice:hover{
-  opacity: 1;
 }
 
 #icono{
@@ -156,11 +146,14 @@ a{
 }
 .pIndice{
   color: #eef;
-  margin: 5px;
-  padding: 5px;
+  margin: 15px;
+  padding: 5px 3em;
+  transition: border-left .7s, color .7s;
+  animation: borderAnimation 2s infinite;
 }
 .pIndice:hover{
-  border-bottom: 1px solid #fff;
+  color: #ff4c87;
+  border-left: 2px solid #ff4c87;
 }
 .seccion{
   display: flex;

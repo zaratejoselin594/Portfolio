@@ -6,3 +6,4 @@ window.onload = function () {
     progress.setAttribute("class", "contenedor-progreso")
   }, 3000);
 };
+
