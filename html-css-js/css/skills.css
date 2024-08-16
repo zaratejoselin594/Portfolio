@@ -1,21 +1,58 @@
-.skill{
+.body{
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 20em;
-  border-radius: 5px;
 }
-.icon-skill{
-  font-size: 40px;
-  margin: 5px;
-  margin-top: .7em;
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
 }
-.divS{
-  padding: 35px;
-  border-radius: 5px;
-  background-color: #222;
+.container .card{
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15em;
+  height: 18em;
+  background-color: #333;
+  margin: 2em;
+  border-radius: 1.2em;
+  overflow: hidden;
 }
-.frameworks{
-  border: none;
-  margin-left: 10px;
+.len{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 4;
+}
+.container .card::before{
+  content: '';
+  height: 10em;
+  width: 10em;
+  top: var(--y);
+  left: var(--x);
+  position: absolute;
+  filter: blur(30px);
+  background: linear-gradient(130deg,rgb(121, 2, 195), rgb(254, 76, 0));
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  border-radius: 50%;
+  transition: 0.5s, top 0s, left 0s;
+}
+.container .card:hover::before{
+  opacity: 1;
+}
+.container .card::after{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 1.2em;
+  background: rgba(45, 45, 45, 0.7);
 }

@@ -14,7 +14,7 @@ html{
   box-sizing: border-box;
 }
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 body::-webkit-scrollbar-track {
@@ -22,7 +22,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #555;
+  background-color: #444;
   border-radius: 20px;
 }
 .nav{
@@ -80,8 +80,11 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 .nombre{
-  width: 27em;
+  width: 100%;
   height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
@@ -109,6 +112,7 @@ body::-webkit-scrollbar-thumb {
   filter: blur(60px);
   background: linear-gradient(130deg,rgb(121, 2, 195) 30%, rgb(254, 76, 0));
   animation: rotate-center 6s linear infinite both;
+  
 }
 
 .bl{
@@ -227,6 +231,4 @@ a{
     transform: rotate(360deg);
   }
 }
-@media screen {
-  
-}
+
