@@ -45,11 +45,9 @@ body::-webkit-scrollbar-thumb {
   color: #eef;
   opacity: .6;
   cursor: pointer;
-  transition: opacity .7s ease-in-out, border-bottom .7s ease-in-out, transform .6s ease-in-out;
+  transition: opacity .7s ease-in-out, t;
 }
 .pMenu:hover{
-  border-bottom: 2px #fff7 solid;
-  transform: scale(1.1);
   opacity: 1;
 }
 .pNav{
@@ -128,15 +126,16 @@ body::-webkit-scrollbar-thumb {
 }
 .indice {
   width: 7em;
-  height: 8em;
+  height: 13em;
   padding: 20px;
   font-family: 'Quicksand', sans-serif;
   position: sticky;
   top: 30px;
   display: flex;
   align-items: center;
-  justify-content: baseline;
+  justify-content: space-evenly;
   flex-direction: column;
+  
 }
 
 #icono{
@@ -149,15 +148,15 @@ a{
   text-decoration: none;
 }
 .pIndice{
+  position: absolute;
   color: #eef;
-  margin: 15px;
-  padding: 5px 3em;
-  transition: border-left .7s, color .7s;
+  padding: 2em 2em;
+  margin: 0.6em;
+  transition: background .4s;
   animation: borderAnimation 2s infinite;
 }
 .pIndice:hover{
-  color: #ff4c87;
-  border-left: 2px solid #ff4c87;
+  background: radial-gradient(rgb(255, 54, 181), transparent, transparent);
 }
 .seccion{
   display: flex;
