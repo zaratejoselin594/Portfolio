@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=M+PLUS+2:wght@100;300;400&family=Maven+Pro&display=swap');
+
+/* Estilos para todos numeros ---------------------------------------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  font-family: 'M PLUS 2', sans-serif;
+  padding: 0;
+  color: #fff;
+}
+
+/* Barra lateral ----------------------------------------------------------------------------------------------------------------------- */
+body {
+  background-color: #111;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #111;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 20px;
+}
+
+/* Logo izq superior JSZ ----------------------------------------------------------------------------------------------------------------- */
+.contenedorLogoIzq {
+  width: 100%;
+  height: 5em;
+  position: fixed;
+}
+.logoIzq {
+  width: 15em;
+  padding: 1em;
+  font-size: 28px;
+  gap: 1em;
+  color: #fff;
+  font-family: 'Cutive Mono', monospace;
+}
+
+/* Pantalla Inicio Precentacion Nombre -------------------------------------------------------------------------------------------------- */
+#pantallaPrecentacion {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contenidoPrecentacion {
+  line-height: 1.5;
+  width: 35em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.contenidoPrecentacion h3 {
+  color: #ccf;
+  font-size: 20px;
+}
+.contenidoPrecentacion h4 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  color: #a7f;
+}
+
+/* Estilo de titulo de mi nombre ---------------------------------------------------------------------------------------------------- */
+.contenedorMiNombre {
+  width: 100%;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.tituloMiNombre {
+  font-family: 'Cherry Bomb One', cursive;
+  font-size: 2.5em;
+  color: #fff;
+}
+.borde {
+  position: absolute;
+  color: #333;
+  text-shadow:
+    -0.6px -0.6px 0px #fff,
+    0.6px 0.6px 0px #fff,
+    -0.6px 0.6px 0px #fff,
+    0.6px -0.6px 0px #fff;
+}
+.ola {
+  position: absolute;
+  color: #a7f;
+  animation: ola 3s ease-in-out infinite;
+}
+@keyframes ola {
+
+  0%,
+  100% {
+    clip-path: polygon(0% 47%,
+        10% 38%,
+        33% 54%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 38%,
+        100% 46%,
+        100% 100%,
+        0% 100%);
+  }
+}
+
+/* Menu de navegacion en la precentacion -------------------------------------------------------------------------------------------------- */
+.contenedorNavegacion {
+  gap: 1.3em;
+  padding: .6em;
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textoNavegacion {
+  text-decoration: none;
+  padding: .6em;
+  z-index: 4;
+  color: #eef;
+  opacity: .6;
+  cursor: pointer;
+  transition: opacity .7s ease-in-out, t;
+}
+
+.textoNavegacion:hover {
+  opacity: 1;
+}
+
+/* Fondo circulos giratorios degradados ----------------------------------------------------------------------------------------------------- */
+.circulo {
+  width: 30em;
+  height: 30em;
+  opacity: .6;
+  z-index: -1;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(60px);
+  background: linear-gradient(130deg, rgb(121, 2, 195) 30%, rgb(254, 76, 0));
+  animation: rotate-center 6s linear infinite both;
+
+}
+.rotacionIzq {
+  left: -10em;
+  opacity: 1;
+  filter: blur(110px);
+}
+.rotacionDer {
+  opacity: 1;
+  filter: blur(110px);
+  right: 10em;
+  bottom: -80em;
+}
+
+/* Menu lateral ----------------------------------------------------------------------------------------------------------------------------- */
+.menuLateral {
+  width: 7em;
+  height: 13em;
+  padding: 20px;
+  font-family: 'Quicksand', sans-serif;
+  position: sticky;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+}
+#icono {
+  font-size: 30px;
+  color: #fff;
+  margin: 10px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.navegacionLateral {
+  position: absolute;
+  color: #eef;
+  padding: 2em 2em;
+  margin: 0.6em;
+  transition: background .4s;
+  animation: borderAnimation 2s infinite;
+}
+.navegacionLateral:hover {
+  background: radial-gradient(rgb(255, 54, 181), transparent, transparent);
+}
+
+.infoPortafolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 93%;
+  padding: 2em;
+  margin: 1em;
+}
+.contenidoPortafolio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+#projets {
+  padding-top: 2em;
+}
+
+#projects h2 {
+  margin: 20px 0px;
+}
+
+
+
+
+
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
