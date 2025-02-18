@@ -247,7 +247,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 50%;
   text-align: start;
 }
 #web {
