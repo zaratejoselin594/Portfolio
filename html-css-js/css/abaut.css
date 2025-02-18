@@ -1,12 +1,22 @@
-.texto-abaut{
-  padding-top: 10px;
-  line-height: 1.5;
-  font-size: 20px;
-  margin: 30px 0px;
-  border-radius: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=M+PLUS+2:wght@100;300;400&family=Maven+Pro&display=swap');
+.abaut{
+  width: 35em;
+  text-align: left;
+  margin: 2em 0;
+}
+.abaut span{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  color: #a7f;
+}
+.plan {
+  background-color: #a104f6;
+  border-radius: 1em;
+  text-align: center;
+  padding: .5em;
+  color: #000;
 }
 .btnCV{
-  margin: 20px 0px;
   border: none;
   border-radius: 5px;
   background-color: #f66;
@@ -21,4 +31,18 @@
 .btnCV:hover{
   text-shadow: 0px 0px 5px #fff;
   box-shadow:  0px 0px 10px rgb(254, 127, 127);
+}
+.imgPropuesta{
+  width: 9em;
+  height: 10em;
+  object-fit: cover;
+  margin: 1em 0;
+}
+@media (max-width: 1100px) {
+  .abaut {
+    width: 100%;
+    text-align: left;
+    margin: 2em 0;
+  }
+
 }
