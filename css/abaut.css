@@ -33,7 +33,13 @@
 }
 .imgPropuesta{
   width: 9em;
-  height: 10em;
+  height: 10.5em;
+  object-fit: cover;
+  margin: 1em 0;
+}
+.imgPropuesta3{
+  width: 12em;
+  height: 11em;
   object-fit: cover;
   margin: 1em 0;
 }
