@@ -44,4 +44,7 @@
     text-align: left;
     margin: 2em 0;
   }
+  .contenidoPortafolio {
+    width: 80%;
+  }
 }
