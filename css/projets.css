@@ -89,7 +89,9 @@
     border-radius: 1.2em;
     background: rgba(25, 25, 25, 0.7);
   }
-  
+  #web {
+    text-align: center;
+  }
 }
 @media (max-width: 1100px) {
   #web {

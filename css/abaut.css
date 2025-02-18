@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=M+PLUS+2:wght@100;300;400&family=Maven+Pro&display=swap');
 .abaut{
   width: 35em;
-  text-align: left;
+  text-align: start;
   margin: 2em 0;
 }
 .abaut span{
@@ -44,5 +44,4 @@
     text-align: left;
     margin: 2em 0;
   }
-
 }
