@@ -137,8 +137,11 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-evenly;
   flex-direction: column;
 }
-
-#icono{
+.iconosflex{
+  display: flex;
+  gap: .3em;
+}
+.icono{
   font-size: 3em;
   color: #fff;
   margin: 10px;
