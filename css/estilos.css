@@ -114,6 +114,12 @@ body::-webkit-scrollbar-thumb {
         0% 100%);
   }
 }
+.icono {
+  font-size: 1.6em;
+  color: #fff;
+  cursor: pointer;
+  margin: .1em;
+}
 
 /* Menu de navegacion en la precentacion -------------------------------------------------------------------------------------------------- */
 .contenedorNavegacion {
