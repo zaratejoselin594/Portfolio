@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/estilos.css">
-  <link rel="stylesheet" href="./css/projets.css">
-  <link rel="stylesheet" href="./css/abaut.css">
-  <link rel="stylesheet" href="./css/skills.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <title>Joselin S. Zarate</title>
+  <title>Joselin S. Zarate - Backend Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=M+PLUS+2:wght@100;300;400;500;600;700&family=Maven+Pro:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
 </head>
+
 <body>
   <header class="hr">
     <nav class="hrNavBarRve">
-      <a href="#home">
-        <h2 class="hrLogo">JSZ</h2>
+      <a href="#pantallaPrecentacion">
+        <h2 class="hrLogo">JZ</h2>
       </a>
       <input type="checkbox" id="menu" class="hrCheckBox">
       <label for="menu">
@@ -22,155 +24,253 @@
         <ion-icon class="hrIconNavBarSolid" name="grid"></ion-icon>
       </label>
       <ul class="hrUlRve">
-        <li class="hrUlLiRve"><a class="hrLiA" href="#pantallaPrecentacion" title="Inicio">Inicio</a></li>
-        <li class="hrUlLiRve"><a class="hrLiA" href="#web" title="web">Web</a></li>
-        <li class="hrUlLiRve"><a class="hrLiA" href="#porque" title="Pastel Personalizado">Ventas Rapidas</a></li>
-        <li class="hrUlLiRve"><a class="hrLiA" href="#planes" title="Tienda">Planes</a></li>
+        <li class="hrUlLiRve"><a class="hrLiA" href="#pantallaPrecentacion" title="Home">Home</a></li>
+        <li class="hrUlLiRve"><a class="hrLiA" href="#projects" title="Projects">Projects</a></li>
+        <li class="hrUlLiRve"><a class="hrLiA" href="#about" title="About Me">About</a></li>
+        <li class="hrUlLiRve"><a class="hrLiA" href="#skills" title="Skills">Skills</a></li>
       </ul>
     </nav>
   </header>
+
   <main id="pantallaPrecentacion">
-    <div class="contenidoPrecentacion"> 
-      <h4>Hola Soy</h4>
-      <h3>Estudiante en desarrollo web</h3>
+    <div class="contenidoPrecentacion">
+      <h4>Hi, I'm</h4>
+      <h3>A backend programmer in training, passionate about learning.</h3>
       <div class="contenedorMiNombre">
         <h2 class="borde tituloMiNombre">Joselin Zarate</h2>
         <h2 class="ola tituloMiNombre">Joselin Zarate</h2>
       </div>
       <div class="contenedorNavegacion">
-        <a href="#web" class="textoNavegacion">Web</a>
-        <a href="#ventas" class="textoNavegacion">Ventas Rapidas</a>
-        <a href="#planes" class="textoNavegacion">Planes</a>
+        <a href="#projects" class="textoNavegacion">Projects</a>
+        <a href="#about" class="textoNavegacion">About</a>
+        <a href="#skills" class="textoNavegacion">Skills</a>
       </div>
-      <div>
-        <a href="https://github.com/zaratejoselin594" target="_blank" title="Gtihub" class="icono">
-          <ion-icon name="logo-github"></ion-icon>
+      <div class="social-icons">
+        <a href="https://github.com/zaratejoselin594" target="_blank" title="Github">
+          <ion-icon name="logo-github" id="icono"></ion-icon>
         </a>
-        <a href="https://wa.me/+5493517716910" title="WhatsApp" target="_blank" class="icono">
-          <ion-icon name="Logo-whatsapp"></ion-icon>
+        <a href="https://www.linkedin.com/in/joselin-zarate-b83769269/" target="_blank" title="LinkedIn">
+          <ion-icon name="logo-linkedin" id="icono"></ion-icon>
         </a>
-      </div>   
+      </div>
     </div>
     <div class="circulo"></div>
   </main>
+
   <section class="infoPortafolio">
-    <div class="contenidoPortafolio"> 
-      <h2>Paginas</h2>
-      <p>Servicio Web - Transforma tu negocio con una web que aumenta tus ventas</p>
-      <div id="web">
-        <!--Proyecto Tabla de Multiplicar --------------------------------------------------------- -->
-        <div class="body">
-          <div class="container">
-            <div class="card">
-              <div class="len">
-                <div class="expandirImg">
-                  <a href="https://zaratejoselin594.github.io/Web-design/" target="_blank">
-                    <img src="img/Captura de pantalla 2025-02-19 125056.png" alt="" class="imgProyect">
-                  </a>
+    <div class="contenidoPortafolio">
+      <h2>Projects</h2>
+      <div id="projects">
+        <div id="web">
+          <div class="body">
+            <div class="container">
+              <div class="card">
+                <div class="len">
+                  <div class="expandirImg">
+                    <a href="https://zaratejoselin594.github.io/Web-design/" target="_blank">
+                      <img src="img/Captura de pantalla 2025-02-19 125056.png" alt="Pastry shop website"
+                        title="Pastry shop website" class="imgProyect">
+                    </a>
+                  </div>
+                  <h3 class="tituloProyecto">Delizz</h3>
+                  <p>
+                    Website for custom cake orders. Includes a catalog, shopping cart, the option to draw the cake, and
+                    send the order via WhatsApp. I managed to get the shopping cart working on all pages without losing data. Technologies:
+                    <ion-icon name="logo-javascript" title="JavaScript"></ion-icon>
+                    <ion-icon name="logo-css3" title="CSS"></ion-icon>
+                    <ion-icon name="logo-html5" title="HTML"></ion-icon>
+                    For more information:
+                  </p>
+                  <div class="iconosflex">
+                    <a class="icono" href="https://github.com/zaratejoselin594/Web-design" target="_blank"
+                      title="Github">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a class="icono" href="https://zaratejoselin594.github.io/Web-design/" title="Open web"
+                      target="_blank">
+                      <ion-icon name="open-outline"></ion-icon>
+                    </a>
+                  </div>
                 </div>
-                <h3 class="tituloProyecto">Web de Pasteleria</h3>
-                <p>
-                  En esta página web se implementó el Plan Dos, con una funcionalidad personalizada que permite a los clientes personalizar su pastel subiendo una imagen de referencia o dibujándolo. Tecnologias:
-                  <ion-icon name="logo-javascript" title="JavaScript"></ion-icon>
-                  <ion-icon name="logo-css3" title="Css"></ion-icon>
-                  <ion-icon name="logo-html5" title="HTML"></ion-icon>
-                  <br>
-                  Por más informacion:
-                </p>
-                <div class="iconosflex">
-                  <a class="icono" href="https://github.com/zaratejoselin594/Tabla-de-multiplicacion" target="_blank" title="Gtihub">
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                  <a class="icono" href="https://zaratejoselin594.github.io/Web-design/" target="_blank">
-                    <ion-icon name="open-outline"></ion-icon>
-                  </a>
+              </div>
+
+              <div class="card">
+                <div class="len">
+                  <div class="expandirImg">
+                    <a href="https://jys-viajes.onrender.com/" target="_blank">
+                      <img src="img/image.png" alt="Travel website" title="Travel website" class="imgProyect">
+                    </a>
+                  </div>
+                  <h3 class="tituloProyecto">JyS Viajes</h3>
+                  <p>
+                    Travel website with catalog of plans, vans, and services. Includes a quote form that can be sent via
+                    Gmail. I managed to
+                    publish the page on Render and get it working online. Technologies:
+                    <ion-icon name="logo-python" title="Django Python"></ion-icon>
+                    <ion-icon name="logo-css3" title="CSS"></ion-icon>
+                    For more information:
+                  </p>
+                  <div class="iconosflex">
+                    <a class="icono" href="https://jys-viajes.onrender.com/" title="Open web" target="_blank">
+                      <ion-icon name="open-outline"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/+5493517716910" target="_blank" class="WhatsApp">Ask questions</a>
+        </div>
+      </div>
+
+      <div id="about">
+        <div class="about">
+          <h2>About me | Soft Skills</h2>
+          <p class="texto-about">
+            I enjoy improving processes, solving problems, and learning about business and economics in a school
+            setting. I like
+            organizing ideas and collaborating in a team. I am curious, adaptable, communicative, organized, and
+            persistent.
+          </p>
+          <div class="cv">
+            <a class="btnCV" href="#" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills">
+        <div class="floating-particles">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
+
+        <div class="skills-container">
+          <h2 class="skills-title">Technical Skills</h2>
+
+          <div class="skills-grid">
+            <!-- Frontend Technologies -->
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">🎨</span>
+                Frontend Development
+              </h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <ion-icon name="logo-javascript" class="skill-icon js-icon"></ion-icon>
+                  <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-css3" class="skill-icon css-icon"></ion-icon>
+                  <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-html5" class="skill-icon html-icon"></ion-icon>
+                  <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-react" class="skill-icon react-icon"></ion-icon>
+                  <span class="skill-name">React</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend Technologies -->
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">⚙️</span>
+                Backend Development
+              </h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <ion-icon name="logo-python" class="skill-icon python-icon"></ion-icon>
+                  <span class="skill-name">Python</span>
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="server-outline" class="skill-icon django-icon"></ion-icon>
+                  <span class="skill-name">Django</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Automation & Tools -->
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">🔧</span>
+                Automation & Tools
+              </h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <span class="learning-badge">Learning</span>
+                  <ion-icon name="git-network-outline" class="skill-icon n8n-icon"></ion-icon>
+                  <span class="skill-name">n8n</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">🌐</span>
+                Languages
+              </h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <span class="learning-badge">Learning</span>
+                  <ion-icon name="language-outline" class="skill-icon english-icon"></ion-icon>
+                  <span class="skill-name">English</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Future Learning -->
+            <div class="skill-category">
+              <h3 class="category-title">
+                <span class="category-icon">🚀</span>
+                Future Learning
+              </h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <span class="interested-badge">Interest</span>
+                  <ion-icon name="code-outline" class="skill-icon csharp-icon"></ion-icon>
+                  <span class="skill-name">C#</span>
+                </div>
+                <div class="skill-item">
+                  <span class="interested-badge">Interest</span>
+                  <ion-icon name="hardware-chip-outline" class="skill-icon ai-icon"></ion-icon>
+                  <span class="skill-name">LLM/SLM</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <a href="https://wa.me/+5493517716910" target="_blank" class="WhatsApp">Consulta tus dudas</a>
-      </div>
-      <div id="ventas">
-        <div class="abaut">
-          <h2>Ventas Rapidas</h2> <br>
-          <h3>¿Te gustaría <span>ganar tiempo y vender más rápido</span> en tu negocio?</h3> <br>
-          <p class="texto-abaut">
-            Hola, soy Joselin Zarate, estudiante de desarrollo web. Y realizo <span>paginas web de comercio electrónico personalizadas</span>. <br>
-            <br>
-            Si estás buscando una solución digital que te ayude a <span>automatizar pedidos y aumentar tu confianza y credibilidad en
-            línea</span>, ¡esta es la oportunidad que estabas esperando!
-            <br>
-          </p>
-          <img class="imgPropuesta" src="https://media-public.canva.com/1-Obg/MAF-OF1-Obg/1/t.png" alt="Personaje de dibujo con computadora">
-          <p>
-            Las webs no solo son atractivas, también están <span>pensadas para facilitar el proceso de compra</span> de tus clientes.
-          </p>
-          <br>
-          <ul>
-            <li><span>Automatización</span> total de tus pedidos.</li>
-            <li>Integración directa con <span>WhatsApp</span> para que los pedidos lleguen automáticamente a tu móvil.</li>
-            <li>Mayor <span>credibilidad y confianza para tu audiencia</span>, haciendo que tu negocio luzca más profesional.</li>
-            <li><span>Control total</span> de tus precios y promociones.</li>
-          </ul>
-          <br>
-          <p>
-            No solo vendo una web, <span>te doy un sistema que atrae y aumenta tus ventas</span>.
-          </p>
-          <img class="imgPropuesta" src="https://media-public.canva.com/sZS-s/MAF-OUsZS-s/1/s.png" alt="">
-          <div id="planes">
-            <h3 class="plan">
-              Plan 1: Solo web
-            </h3>
-            <br>
-            <ul>
-              <li>Personalización</li>
-              <li>Diseño</li>
-              <li>Funciones necesarias para vender de manera eficiente. <span>Añadir productos al carrito basico, y realizar pedido por WhatsApp</span></li>
-              <li>Precio Regular</li>
-            </ul>
-            <br>
-            <h3 class="plan">Plan 2: Web + Mantenimiento (Recomendado)</h3>
-            <br>
-            <ul>
-              <li>Incluye todo lo del Plan 1.</li>
-              <li>Optimización dispositivos móviles.</li>
-              <li>3 paginas</li>
-              <li>Soporte post-lanzamiento y mantenimiento</li>
-            </ul>
-            <br>
-            <p>
-              Mantenimiento mensual, que te permitirá realizar ajustes, <span>agregar nuevas funcionalidades o personalizar características
-              importantes para ti</span>.
-              El precio de mantenimiento variará según tus necesidades, dependiendo de las modificaciones y mejoras que desees
-              incorporar.
-            </p>
-            <img class="imgPropuesta3" src="https://media-public.canva.com/ff-Dw/MAF-OAff-Dw/1/s.png" alt="">
-          </div>
-        </div>
       </div>
     </div>
   </section>
+
   <footer>
     <div class="circulo cF"></div>
     <div class="foter">
-      <p>Joselin S Zarate</p>
+      <p>Joselin Selene Zarate</p>
       <div>
-        <a class="icono" href="https://github.com/zaratejoselin594" target="_blank" title="Gtihub">
-          <ion-icon name="logo-github"></ion-icon>
+        <a href="https://github.com/zaratejoselin594" target="_blank" title="Github">
+          <ion-icon name="logo-github" id="icono"></ion-icon>
         </a>
-        <a class="icono" href="https://wa.me/+5493517716910" title="WhatsApp" target="_blank">
-          <ion-icon name="Logo-whatsapp"></ion-icon>
+        <a href="https://www.linkedin.com/in/joselin-zarate-b83769269/" target="_blank" title="LinkedIn">
+          <ion-icon name="logo-linkedin" id="icono"></ion-icon>
         </a>
       </div>
-      
       <a href="#pantallaPrecentacion" class="btn-arrow">
         <ion-icon name="arrow-up-outline"></ion-icon>
       </a>
     </div>
   </footer>
+
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
